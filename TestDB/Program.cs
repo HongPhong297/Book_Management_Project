@@ -8,7 +8,8 @@ namespace TestDB
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.WriteLine("Xin chào thế giới");
             BookManagementDbContext db = new BookManagementDbContext();
             List<BookCategory> arr = db.BookCategories.ToList();
             
